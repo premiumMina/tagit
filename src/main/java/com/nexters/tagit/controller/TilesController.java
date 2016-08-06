@@ -1,4 +1,4 @@
-package tagit.controller;
+package com.nexters.tagit.controller;
 
 import javax.servlet.http.HttpSession;
 

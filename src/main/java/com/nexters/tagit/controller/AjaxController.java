@@ -1,4 +1,4 @@
-package tagit.controller;
+package com.nexters.tagit.controller;
 
 
 import java.io.IOException;
@@ -23,8 +23,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import tagit.model.User;
-import tagit.mapper.*;
+import com.nexters.tagit.model.User;
+import com.nexters.tagit.mapper.*;
 @Controller
 public class AjaxController {
 	

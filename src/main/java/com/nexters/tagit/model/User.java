@@ -1,4 +1,4 @@
-package tagit.model;
+package com.nexters.tagit.model;
 
 import java.io.Serializable;
 

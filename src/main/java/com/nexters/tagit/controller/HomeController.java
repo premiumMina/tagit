@@ -1,4 +1,4 @@
-﻿package tagit.controller;
+﻿package com.nexters.tagit.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-import tagit.model.User;
-import tagit.mapper.UserMapper;
+import com.nexters.tagit.model.User;
+import com.nexters.tagit.mapper.UserMapper;
 
 
 
