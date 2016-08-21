@@ -255,7 +255,9 @@
                 <div class="head">
                     <img src="resources/images/icon/get_memo_sharp.png">
                 </div>
-                <div class="body"></div>
+                <div class="body">
+                <input class="txt_tags" type="text" placeholder = "태그를 입력하세요." data-provide="tokenizer" value=""> 
+                </div>
             </div>
             <div class="memo">
                 <div class="head">

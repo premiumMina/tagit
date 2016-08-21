@@ -117,6 +117,8 @@ article#list .cards .card .wrap .bottom .tags {
 }
 article#list .cards .card .wrap .bottom .tags span {
   color: #FFFFFF;
+  cursor:pointer;
+  
 }
 article#list .cards .card.text {
   background-color: #4b4b4b;
@@ -537,6 +539,33 @@ aside#detail_edit .wrap {
   aside#detail_edit .wrap .article .tags {
     border-bottom: 1px solid #e8e8e8;
   }
+
+    aside#detail_edit .wrap .article .memo .body .txt_tags{
+    width:calc(100%-121px)!important;
+    border:0;
+    }  
+    
+    aside#detail_edit .wrap .article .memo .body .txt_tags:hover,
+    aside#detail_edit .wrap .article .memo .body .txt_tags:active {
+    outline: none;
+  }
+  
+div.tokenizer {
+	transition-duration: 0.6s;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	width: 100% !important;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 15px;
+	background: #ffffff;
+	border: 0;
+/* 	border-bottom: 1px solid #ddd; */
+	padding: 5px;
+}
+
   aside#detail_edit .wrap .article .memo .body .txt_memo {
     font-size: 4vw;
     padding: 3vw;
@@ -556,6 +585,7 @@ aside#detail_edit .wrap {
     background-color: #FFFFFF;
     font-size: 0;
   }
+  
   aside#detail_edit .wrap .article .tags .head,
   aside#detail_edit .wrap .article .memo .head {
     vertical-align: top;
@@ -575,6 +605,12 @@ aside#detail_edit .wrap {
     display: inline-block;
     width: calc(100% - 13vw);
   }
+  
+  aside#detail_edit .wrap .article .tags .body{
+  vertical-align:middle;
+  margin-top: 15px;
+  }
+  
   aside#detail_edit .wrap .footer {
     margin: 0 auto;
     padding: 3vw;
