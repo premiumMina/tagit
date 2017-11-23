@@ -1,15 +1,11 @@
 package com.nexters.tagit.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,9 +18,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nexters.tagit.mapper.UserMapper;
 import com.nexters.tagit.model.UserModel;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 @RequestMapping(value = "/login")
 public class LoginController {
@@ -38,14 +31,15 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "", method = RequestMethod.POST)
-	public String loginProcess(@RequestBody UserModel user, HttpSession session, Locale locale, Model model) throws JsonProcessingException {	
-		Map<String,Object> responseMap = new HashMap<String,Object>();
+	public String loginProcess(@RequestBody UserModel user, HttpSession session, Locale locale, Model model)
+			throws JsonProcessingException {
+		Map<String, Object> responseMap = new HashMap<String, Object>();
 		ObjectMapper objectMapper = new ObjectMapper();
 		if (user.getUser_id() != null) {
 			if (userMapper.selectById(user.getUser_id()) == null) {
 				userMapper.insertUser(user);
 			}
-			
+
 			session.setAttribute("session", user);
 			responseMap.put("state", true);
 			responseMap.put("message", "성공");
